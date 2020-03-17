@@ -34,18 +34,18 @@ public class Arena {
     }
 
     private boolean confCombatente(Combatente comb, String nome, int idade, int poder) {
-        if (poder > 100) {
-            System.out.printf("O combatente é muito poderoso para essa arena\n");
+        if (poder > 8000) {
+            System.out.println("O Meu deus seu poder é maior que 8000!!!(muito poderoso para arena)\n");
             return false;
         }
 
-        if (idade > 20) {
-            System.out.printf("O combatente é muito velho para essa arena\n");
+        if (idade > 40) {
+            System.out.println("O combatente é muito velho para essa arena\n");
             return false;
         }
 
         if (nome == null) {
-            System.out.printf("Esse combatente não tem nome. Não pode entrar para arena.\n");
+            System.out.println("Esse combatente não tem nome. Não pode entrar para arena.\n");
             return false;
         }
 
